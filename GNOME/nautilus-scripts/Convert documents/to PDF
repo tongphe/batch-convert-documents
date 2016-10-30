@@ -1,0 +1,2 @@
+#!/bin/bash
+batch-convert-documents -c "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS"

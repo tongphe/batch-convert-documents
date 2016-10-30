@@ -1,0 +1,28 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+Icon=
+Actions=topdf;tohtml;_SEPARATOR_;topdfsub;tohtmlsub
+Name=Convert documents
+X-KDE-Submenu=Convert documents
+
+[Desktop Action topdf]
+Exec=batch-convert-documents-kde -c %U
+Icon=application-pdf
+Name=to PDF
+
+[Desktop Action tohtml]
+Exec=batch-convert-documents-kde -f html -c %U
+Icon=text-html
+Name=to HTML
+
+[Desktop Action topdfsub]
+Exec=batch-convert-documents-kde -s -c %U
+Icon=application-pdf
+Name=to PDF, to Subfolder
+
+[Desktop Action tohtmlsub]
+Exec=batch-convert-documents-kde -f html -s -c %U
+Icon=text-html
+Name=to HTML, to Subfolder
